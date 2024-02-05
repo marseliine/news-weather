@@ -1,0 +1,13 @@
+.container-title {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: rightShow ease 3s forwards;
+    span{
+        font-size: 64px;
+        line-height: 70px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+}

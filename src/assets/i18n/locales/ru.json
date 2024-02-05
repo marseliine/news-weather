@@ -1,0 +1,86 @@
+{
+    "errorOfRequest": {
+        "noData": "Нет результатов.",
+        "reconecting": "Подождите секундочку...",
+        "point": "Точка:",
+        "code": "Код:"
+    },
+    "home": {
+        "navbar": {
+            "brand": "погода",
+            "aboutProject": "О проекте",
+            "randomPoint": "Случайная точка",
+            "lang": {
+                "currentLang": "Язык",
+                "ru":"Русский",
+                "en":"Английский"
+            },
+            "theme": "Тема:",
+            "currentPoint": "Текущая точка"
+        },
+        "title": "найди свою погоду",
+        "searchField": {
+            "placeholder": "Поиск",
+            "selectField": {
+                "currentWeather": "Текущая",
+                "forecastWeather": "На 5 дней"
+            },
+            "errorEmptyField": "Введите что-нибудь :)"
+        },
+        "cards": {
+            "feelsLike": "Ощущается как:",
+            "temp": "Температура:"
+        }
+    },
+    "undefindPage": {
+        "haveNotFoundPage": "Страница не найдена",
+        "suggestion": "Но вы можете перейти на",
+        "toHome": " домашнюю страницы"
+    },
+    "weatherPage" : {
+        "time": "Время:",
+        "description": "Описание:",
+        "feelsLike": "Ощущается как",
+        "cloudiness": "Облачность:",
+        "wind": "Ветер:",
+        "precipitation_last3H": "Осадки за три часа:",
+        "rain": "Дождь:",
+        "snow": "Снег:"
+    },
+    "defaultPoints": {
+        "moscow": "Москва",
+        "saintP": "Санкт-Петербург",
+        "chelyabinsk": "Челябинск",
+        "ekaterinburg": "Екатеринбург",
+        "kaliningrad": "Калининград",
+        "kazan": "Казань",
+        "ryazan": "Рязань",
+        "sochi": "Сочи",
+        "ufa": "Уфа"
+    },
+    "modalGeoposition": {
+        "positiion": "Ваша позиция",
+        "correctly": "Верно",
+        "incorrectly": "Не верно"
+    },
+    "modalHelper": {
+        "titleHeader": "Ошибки",
+        "body": {
+            "titleBody": "Общие рекомендации исправления:",
+            "checkNetwork": "Проверьте интернет соединение",
+            "checkNameOfPoint":"Проверьте корректность название точки поиска",
+            "description": "Описание:",
+            "401Code": "401 - изменена форма подписки на API",
+            "401Description": "Исправление доступно только разработчику",
+            "404Code": "404 - не верно указано название точки поиска",
+            "404Description": "Для исправления посмотрите общие рекомендации",
+            "429Code": "429 - произведено более 60 запросов за прошедшую минуту или более 1000 за сутки",
+            "429Descroption": "Произведите запрос позже",
+            "500EtcCodes": "500, 502, 503, 504 - ошибка API",
+            "500EtcDescription": "Мы здесь бессильны :("
+        }
+    },
+    "toastText": {
+        "undefinedPoint": "Не удалось определить геопозицию"
+    }
+}

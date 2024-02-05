@@ -1,0 +1,35 @@
+@mixin pos-center {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-link:hover,
+.nav-item:hover,
+.nav-link:focus,
+.nav-item:focus {
+  text-decoration: underline;
+}
+
+.keyfr-opacity {
+    opacity: 0;
+    animation: opacity 3s ease 3s forwards;
+}
+.keyFr-rotate {
+    animation: rotateYY 3s ease  forwards;
+}
+.opacity-animation {
+    animation: opacity 2s ease forwards
+}
+
+.border-radius-50 {
+    border-radius: 50px;
+}
+.b-rad-10 {
+    border-radius: 10px;
+}
+
+.modal-content {
+    border: 0;
+}

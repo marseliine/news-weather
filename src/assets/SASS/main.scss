@@ -1,0 +1,24 @@
+
+
+@import 'colors', 'keyframes', 'default';
+@import 'themes';
+@import './stylesOfCard/glassEffect', './stylesOfCard/rotatingCard';
+
+@import './spinners/spinnerCube', './spinners/spinnerMainWeather';
+
+@import './nav/customCheckbox';
+
+@import './home/brand', './home/title', './home/hashtag', './home/cards',  './home/homePage';
+
+@import "media";
+
+
+body {
+  height: 100vh;
+  background-color: inherit;
+  color: inherit;
+}
+
+#root {
+  height: 100%;
+}

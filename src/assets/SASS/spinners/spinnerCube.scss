@@ -1,0 +1,96 @@
+$smallSize: 25px;
+$mediumSize: $smallSize * 3.5;
+$bigSize: $smallSize * 8;
+
+$smallLength: calc($smallSize / 2);
+$mediumLength: calc($mediumSize / 2);
+$bigLength: calc($bigSize / 2);
+
+@mixin cubeMixin($size, $length) {
+    position: absolute;
+    width: $size;
+    height: $size;
+
+
+    perspective: 1000px;
+    opacity: 0;
+    animation: opacity 2.5s ease 3s forwards;
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+    .cube {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        animation: rotateXY 4s infinite alternate-reverse;
+        /*animation: rotateYY 2.5s linear 0s forwards;*/
+        transform-style: preserve-3d;
+        &:hover {
+            cursor: pointer;
+            animation-play-state: paused;
+        }
+        .side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            box-sizing: border-box;
+            border: 1.5px solid black;
+            
+            opacity: 0.8;
+            img {
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        .front {
+            transform: translateZ($length);
+
+        }
+
+        .back {
+            transform: translateZ(-$length);
+
+        }
+
+        .left {
+            transform: rotateY(90deg) translateZ(-$length);
+    
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ($length);
+
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(-$length);
+
+        }
+
+        .bottom {
+            transform: rotateX(90deg) translateZ($length);
+
+        }
+    }
+}
+
+.container-smallCube {
+    @include cubeMixin($size: $smallSize, $length: $smallLength);
+}
+
+.container-mediumCube {
+    @include cubeMixin($size: $mediumSize, $length: $mediumLength);
+}
+
+.container-bigCube {
+    @include cubeMixin($size: $bigSize, $length: $bigLength);
+}
+
